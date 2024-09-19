@@ -20,8 +20,6 @@ return new class extends Migration
             $table->time('waktu');
             $table->enum('status', ['Confirmed', 'Pending', 'Cancelled']);
             $table->timestamps();
-
-            // Foreign key constraints
             $table->foreign('id_meja')->references('id_meja')->on('mejas')->onDelete('cascade');
             $table->foreign('id_customer')->references('id_customer')->on('customers')->onDelete('cascade');
         });

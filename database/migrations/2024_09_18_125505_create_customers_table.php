@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('password', 255);
             $table->string('no_telepon', 20);
             $table->timestamps();
-
-            // Foreign key constraint
             $table->foreign('id_otentikasi')->references('id_otentikasi')->on('otentikasis')->onDelete('cascade');
         });
     }

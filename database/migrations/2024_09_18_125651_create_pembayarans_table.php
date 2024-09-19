@@ -19,8 +19,6 @@ return new class extends Migration
             $table->enum('status_pembayaran', ['Paid', 'Pending', 'Cancelled']);
             $table->enum('jenis_pembayaran', ['Deposit', 'Full Payment']);
             $table->timestamps();
-
-            // Foreign key constraint
             $table->foreign('id_reservasi')->references('id_reservasi')->on('reservasis')->onDelete('cascade');
         });
     }

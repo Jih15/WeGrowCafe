@@ -18,8 +18,6 @@ return new class extends Migration
             $table->integer('kapasitas');
             $table->string('lokasi_meja', 50);
             $table->timestamps();
-
-            // Foreign key constraint
             $table->foreign('id_cafe')->references('id_cafe')->on('cafes')->onDelete('cascade');
         });
     }
