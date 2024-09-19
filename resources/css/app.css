@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* resources/css/app.css */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .montserrat-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  .inter-regular{
+    font-family: 'Inter', sans-serif;
+  }
+
+  .inter-bold{
+    font-family: 'Inter' sans-serif;
+    font-weight: 700;
+  }
+
+  .bg-image-main{
+    background-image: url(/public/images/bg.png);
+  }
